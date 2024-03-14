@@ -1,1 +1,18 @@
+# Function: Validate Syntax
+This JavaScript function is designed to validate the syntax of an input string retrieved from an HTML element with the id "petInput".
+It checks whether the input string starts with the characters "pet_", followed by one or more digits, and then followed by one or more alphanumeric characters.
 
+# How to use:
+Ensure the HTML element with the id "petInput" exists in your HTML file.
+Call the validateSyntax() function when needed on form submission or button click by typing the required string.
+Then click the validate button.
+Do not forget to link the javascript on your html file together with the styles.css.
+
+# Regular expression explained:
+/^pet_\d+[a-zA-Z]+$/
+
+^ shows the start of the string.
+pet_ matches the exact characters "pet_".
+\d+ matches one or more digits.
+[a-zA-Z]+ matches one or more uppercase or lowercase letters.
+$ shows the end of the string.
